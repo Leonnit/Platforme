@@ -1,0 +1,150 @@
+.header, header{
+   /* background-color: #3C3C3C;*/
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    
+}
+.header{
+    background-color: #3C3C3C; 
+    height: 40px;
+}
+.head, nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    width: 1400px;
+}
+.nav{
+    background-color: #3C3C3C;
+    display: flex;
+}
+.head span{
+    color: white;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+span img{
+    height: 20px;
+}
+.nav .icon{
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.nav .icon:hover{
+    background-color: #17A598;
+}
+.icon img{
+    height: 25px;
+    width: 25px;
+}
+header{
+    /*background-color: firebrick;*/
+    height: 80px;
+}
+nav h1{
+    font-size: 2.5rem;
+    color: #3C3C3C;
+}
+
+.menu-bar{
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+.menu-bar span{
+    background-color: #3C3C3C;
+    width: 25px;
+    height: 3px;
+}
+
+.menu{
+    display: flex;
+    gap: 1rem;
+}
+
+
+.menu a{
+    width: 150px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: center;
+    font-size: 18px;
+    transition: 0.4s;
+    text-decoration: none;
+}
+
+.menu .connection{
+    font-size: 18px;
+    background-color: #17A598;
+    color: white;
+    border: 3px solid #17A598;
+    box-shadow: 0 4px 8px #17A598;
+}
+.menu .Inscription{
+    font-size: 18px;
+    color: #3C3C3C;
+    border: 3px solid #3C3C3C;
+    box-shadow: 0 4px 8px #3C3C3C;
+}
+.menu .Inscription:hover,.connection:hover{
+    background-color: #3C3C3C;
+    color: white;
+}
+@media(max-width:950px){
+    .head, nav{
+        padding: 0 5%;
+    }
+}
+
+@media (max-width:750px){
+    .head{
+        justify-content: space-between;
+        padding: 0 2rem;
+        width: 100%;
+    }
+    
+    nav {
+        justify-content: space-between;
+    }
+
+    header{
+        /*background-color: firebrick;*/
+        height: 50px;
+    }
+    nav h1{
+        font-size: 1.5rem;
+        color: #3C3C3C;
+    }
+    nav .menu{
+        display: none;
+    }
+    .menu-bar{
+        display: flex;
+    }
+    .nav .icon{
+        height: 30px;
+        width: 30px;
+        
+    }
+    .nav .icon:hover{
+        background-color: #17A598;
+    }
+    .icon img{
+        height: 20px;
+        width: 20px;
+    }
+}
