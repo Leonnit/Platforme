@@ -20,7 +20,7 @@ function MyHead (){
                     </div>
                 </div>
             </div>
-            <header>
+            <header> 
                 <nav>
                     <h1>LogoMe</h1>
                     <div className="menu-bar">
