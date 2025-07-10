@@ -37,5 +37,4 @@ function MyHead (){
         </>
     )
 }
-
 export default MyHead

@@ -104,6 +104,8 @@ nav h1{
     background-color: #3C3C3C;
     color: white;
 }
+
+
 @media(max-width:950px){
     .head, nav{
         padding: 0 5%;
