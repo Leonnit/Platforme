@@ -11,11 +11,14 @@ function Header (){
                     <hr />
                 </div>
                 <h3>WE PPROVIDE ADVICE WHEN YOUR BUSINESS NEEDS IT NOT JUST WHEN YOU ASK FOR IT</h3>
-                <button>Commencez</button>
+                <button onClick={hello}>Commencez</button>
             </div>
-
         </div>
     )
+}
+
+function hello (){
+    alert("hello");
 }
 
 export default Header

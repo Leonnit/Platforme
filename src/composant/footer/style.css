@@ -1,0 +1,121 @@
+.centre-footer{
+    background-color: #17A598;
+    justify-content: center;
+    display: flex;
+    margin-top: 100px;
+    width: 100%;
+}
+.hr-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding:0 10%;
+    height: 280px;
+    width: 1400px;
+    color: white;
+}
+.footer-contenue{
+    gap: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.footer-contenue .apropos{
+    display: flex;
+    flex-direction: column;
+    max-width: 350px; 
+    margin: 10px;
+    text-align: center;
+}
+
+.footer-contenue .menu-authentification{
+    display: flex;
+    max-width: 120px;
+    align-items: center;
+    gap: 1rem;
+    min-width: 120px;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.footer-contenue .lien{
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    max-width: 350px;
+}
+.footer-contenue strong{
+    font-size: 2rem;
+}
+.footer-contenue a, p{
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.footer-contenue a:hover{
+    border-bottom: 2px solid white;
+
+}
+
+.link {
+    display: flex;
+}
+
+.link .icon{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.link .icon img{
+    height: 35px;
+    width: 35px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.link .icon img:hover{
+    height: 40px;
+    width: 40px;
+}
+.hr-footer hr{
+    background-color: #ffffff;
+    height: 3px;
+    border: none;
+    width: 100%;
+}
+.hr-footer span{
+    margin-bottom: 10px;
+
+}
+
+@media (max-width:900px){
+    .hr-footer{
+        padding-top: 20px;
+        height: auto;  
+    }
+    .footer-contenue{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        gap: 0rem;
+    }
+    .footer-contenue .apropos{
+        max-width: 500px; 
+    }
+}
+@media (max-width:500px){
+    .footer-contenue .lien p{
+        font-size: 1rem;
+    }
+}

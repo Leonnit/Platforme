@@ -118,7 +118,7 @@
 
 @media (max-width:700px){
     .tete{
-        height: 380px;
+        height: 400px;
     }
     .head{
         justify-content: space-between;
@@ -146,9 +146,6 @@
 }
 @media (max-width:450px){
 
-    .tete{
-        height: 330px;
-    }
     .hr hr{
         width: 120px;
     }
