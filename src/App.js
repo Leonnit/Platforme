@@ -1,15 +1,18 @@
-import MyHead from "./composant/head";
-import Header from "./composant/header";
 import "./App.css"
-import Footer from "./composant/footer";
+import { FormConnection, FormInscription, FormPassword } from "./composant/Authentification";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Section from "./composant/section";
-import Authentification from "./composant/Authentification";
 
 function App(){
   return (
-    <div className="contenue">
-      <Authentification/>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Section/>}/>
+        <Route path="/Inscription" element={<FormInscription/>}/>
+        <Route path="/Password" element={<FormPassword/>}/>
+        <Route path="/Connection" element={<FormConnection/>}/>
+      </Routes>
+    </Router>
   );
 }
 

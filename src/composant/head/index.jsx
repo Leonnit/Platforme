@@ -4,9 +4,19 @@ import instagrame from '../../image/instagram(2).png'
 import twitter from '../../image/twitter(1).png'
 import linkedin from '../../image/linkedin(3).png'
 import appel from '../../image/appel-telephonique.png'
+import { useNavigate } from "react-router-dom"
  
 
 function MyHead (){
+    const navigate = useNavigate();
+
+    const VersInscription = () => {
+        navigate('/Inscription');
+    };
+
+    const VersSeconnecte = () => {
+        navigate('/Connection');
+    };
     return (
         <>
             <div className="header">
@@ -29,8 +39,8 @@ function MyHead (){
                         <span></span>
                     </div>
                     <div className="menu">
-                        <a className="Inscription" href="#contact">S'Inscrirer</a>
-                        <a className="connection" href="#contact">Se Connecter</a>
+                        <a className="Inscription" href="#contact" onClick={VersInscription}>S'Inscrirer</a>
+                        <a className="connection" href="#contact" onClick={VersSeconnecte}>Se Connecter</a>
                     </div>
                 </nav>
             </header>

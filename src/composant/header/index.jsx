@@ -1,6 +1,13 @@
 import "./style.css"
+import { useNavigate } from "react-router-dom";
 
 function Header (){
+    const navigate =useNavigate();
+
+    const VersSeconnexion=()=>{
+        navigate("/Connection")
+    };
+    
     return (
         <div className="en-tete">
             <div className="tete">
@@ -11,7 +18,7 @@ function Header (){
                     <hr />
                 </div>
                 <h3>WE PPROVIDE ADVICE WHEN YOUR BUSINESS NEEDS IT NOT JUST WHEN YOU ASK FOR IT</h3>
-                <button onClick={hello}>Commencez</button>
+                <button onClick={VersSeconnexion}>Commencez</button>
             </div>
         </div>
     )
